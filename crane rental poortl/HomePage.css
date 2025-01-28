@@ -1,0 +1,162 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #1e90ff, #007bff);
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffd700;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bell-icon {
+    font-size: 1.2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #ffd700;
+    color: #000;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.profile-dropdown {
+    cursor: pointer;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.dashboard {
+    padding: 20px 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #007bff;
+    text-align: center;
+}
+
+.status-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card.available {
+    background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+.card.rented {
+    background: linear-gradient(90deg, #007bff, #6c63ff);
+}
+
+.card.maintenance {
+    background: linear-gradient(90deg, #ffc107, #ffca28);
+}
+
+.quick-links .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.quick-links button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quick-links button:hover {
+    background-color: #007bff;
+    transform: translateY(-2px);
+}
+
+.notifications ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notifications li {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.notifications li:hover {
+    background-color: #f8f9fa;
+}

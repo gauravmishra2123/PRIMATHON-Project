@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Tracking</title>
+  <link rel="stylesheet" href="maintance.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Equipment Maintenance Tracking</h1>
+  </header>
+
+  <main class="container">
+    <!-- Form Section -->
+    <div class="form-section">
+      <h2>Track Maintenance</h2>
+      <form id="maintenance-form">
+        <div class="form-group">
+          <label for="equipment-id">Equipment ID</label>
+          <input type="text" id="equipment-id" name="equipment-id" placeholder="Enter Equipment ID" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="equipment-name">Equipment Name</label>
+          <input type="text" id="equipment-name" name="equipment-name" placeholder="Enter Equipment Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="status">Maintenance Status</label>
+          <select id="status" name="status">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="last-maintenance">Last Maintenance Date</label>
+          <input type="date" id="last-maintenance" name="last-maintenance">
+        </div>
+
+        <div class="form-group">
+          <label for="next-maintenance">Next Scheduled Maintenance</label>
+          <input type="date" id="next-maintenance" name="next-maintenance">
+        </div>
+
+        <div class="form-group">
+          <label for="remarks">Remarks</label>
+          <textarea id="remarks" name="remarks" rows="4" placeholder="Enter remarks or notes"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Update</button>
+      </form>
+    </div>
+
+    <!-- Past Records Section -->
+    <div class="records-section">
+      <h2>Past Maintenance Records</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Equipment ID</th>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Last Maintenance</th>
+              <th>Next Maintenance</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dummy Records -->
+            <tr>
+              <td>EQ001</td>
+              <td>Excavator</td>
+              <td><span class="status completed">Completed</span></td>
+              <td>2024-10-10</td>
+              <td>2025-01-10</td>
+              <td>Routine checkup completed.</td>
+            </tr>
+            <tr>
+              <td>EQ002</td>
+              <td>Bulldozer</td>
+              <td><span class="status in-progress">In Progress</span></td>
+              <td>2024-09-20</td>
+              <td>2024-12-20</td>
+              <td>Engine repair in progress.</td>
+            </tr>
+            <tr>
+              <td>EQ003</td>
+              <td>Crane</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>2024-08-15</td>
+              <td>2024-11-15</td>
+              <td>Scheduled maintenance.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 YANTRA MOVERS Rental Platform</p>
+  </footer>
+</body>
+</html>

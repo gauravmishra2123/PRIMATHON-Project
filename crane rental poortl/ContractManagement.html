@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Management - Equipment Rental</title>
+    <link rel="stylesheet" href="ContractManagement.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">YANTRA MOVERS</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Equipment</a></li>
+                <li><a href="#">Contract Management</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <form id="contractForm">
+        <!-- General Contract Information -->
+        <h3>General Contract Information</h3>
+        <div class="form-group">
+          <label for="contractId">Contract ID</label>
+          <input type="text" id="contractId" name="contractId" placeholder="Enter unique contract ID" required>
+        </div>
+        <div class="form-group">
+          <label for="contractType">Contract Type</label>
+          <select id="contractType" name="contractType">
+            <option value="Rental">Rental</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="Leasing">Leasing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contractDate">Contract Date</label>
+          <input type="date" id="contractDate" name="contractDate" required>
+        </div>
+        <div class="form-group">
+          <label for="contractDuration">Contract Duration</label>
+          <input type="text" id="contractDuration" name="contractDuration" placeholder="Enter start and end dates">
+        </div>
+        <div class="form-group">
+          <label for="contractStatus">Contract Status</label>
+          <select id="contractStatus" name="contractStatus">
+            <option value="Active">Active</option>
+            <option value="Draft">Draft</option>
+            <option value="Terminated">Terminated</option>
+            <option value="Completed">Completed</option>
+            <option value="Expired">Expired</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="clientName">Client Name</label>
+          <input type="text" id="clientName" name="clientName" placeholder="Enter client name" required>
+        </div>
+        <div class="form-group">
+          <label for="clientContact">Client Contact Information</label>
+          <textarea id="clientContact" name="clientContact" placeholder="Phone, email, and address"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="projectName">Project Name</label>
+          <input type="text" id="projectName" name="projectName" placeholder="Enter project name">
+        </div>
+      
+        <!-- Crane Details -->
+        <h3>Crane Details</h3>
+        <div class="form-group">
+          <label for="craneId">Crane ID/Name</label>
+          <input type="text" id="craneId" name="craneId" placeholder="Enter crane ID or name">
+        </div>
+        <div class="form-group">
+          <label for="craneType">Crane Type</label>
+          <select id="craneType" name="craneType">
+            <option value="Crawler Crane">Crawler Crane</option>
+            <option value="Mobile Crane">Mobile Crane</option>
+            <option value="Tower Crane">Tower Crane</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="craneCapacity">Crane Capacity</label>
+          <input type="text" id="craneCapacity" name="craneCapacity" placeholder="e.g., 50 Tons">
+        </div>
+        <div class="form-group">
+          <label for="craneCondition">Crane Condition</label>
+          <select id="craneCondition" name="craneCondition">
+            <option value="New">New</option>
+            <option value="Used">Used</option>
+            <option value="Repaired">Repaired</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rentalRate">Rental Rate</label>
+          <input type="text" id="rentalRate" name="rentalRate" placeholder="Hourly, daily, weekly, or monthly rate">
+        </div>
+        <div class="form-group">
+          <label for="usageRestrictions">Usage Restrictions</label>
+          <textarea id="usageRestrictions" name="usageRestrictions" placeholder="Enter restrictions or guidelines"></textarea>
+        </div>
+      
+        <!-- Financial Details -->
+        <h3>Financial Details</h3>
+        <div class="form-group">
+          <label for="totalValue">Total Contract Value</label>
+          <input type="text" id="totalValue" name="totalValue" placeholder="Enter total cost">
+        </div>
+        <div class="form-group">
+          <label for="paymentTerms">Payment Terms</label>
+          <textarea id="paymentTerms" name="paymentTerms" placeholder="Advance, milestone-based, or end-of-term"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="taxes">Taxes and Fees</label>
+          <textarea id="taxes" name="taxes" placeholder="Breakdown of applicable taxes and charges"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="deposit">Deposit Amount</label>
+          <input type="text" id="deposit" name="deposit" placeholder="Refundable security deposit">
+        </div>
+        <div class="form-group">
+          <label for="penaltyClause">Penalty Clause</label>
+          <textarea id="penaltyClause" name="penaltyClause" placeholder="For delays, misuse, or breaches"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="discounts">Discounts/Offers</label>
+          <textarea id="discounts" name="discounts" placeholder="Special rates or discounts"></textarea>
+        </div>
+      
+        <!-- Operational Details -->
+        <h3>Operational Details</h3>
+        <div class="form-group">
+          <label for="workLocation">Work Location</label>
+          <input type="text" id="workLocation" name="workLocation" placeholder="Enter site address">
+        </div>
+        <div class="form-group">
+          <label for="deliveryMethod">Delivery Method</label>
+          <select id="deliveryMethod" name="deliveryMethod">
+            <option value="Self-Pickup">Self-Pickup</option>
+            <option value="Delivery">Delivery by Rental Company</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="deliveryDate">Delivery Date</label>
+          <input type="date" id="deliveryDate" name="deliveryDate">
+        </div>
+        <div class="form-group">
+          <label for="pickupDate">Pickup Date</label>
+          <input type="date" id="pickupDate" name="pickupDate">
+        </div>
+        <div class="form-group">
+          <label for="operatorRequired">Operator Required</label>
+          <select id="operatorRequired" name="operatorRequired">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="operatorDetails">Operator Details</label>
+          <textarea id="operatorDetails" name="operatorDetails" placeholder="Name and certifications"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="serviceSchedule">Service Schedule</label>
+          <textarea id="serviceSchedule" name="serviceSchedule" placeholder="Maintenance requirements"></textarea>
+        </div>
+      
+        <!-- Documentation -->
+        <h3>Documentation</h3>
+        <div class="form-group">
+          <label for="attachedDocuments">Attached Documents</label>
+          <input type="file" id="attachedDocuments" name="attachedDocuments" multiple>
+        </div>
+        <div class="form-group">
+          <label for="insuranceDetails">Insurance Policy Details</label>
+          <textarea id="insuranceDetails" name="insuranceDetails" placeholder="Coverage details"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="permits">Permits</label>
+          <textarea id="permits" name="permits" placeholder="Regulatory or location-specific permits"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="clientAuthorization">Client Authorization</label>
+          <textarea id="clientAuthorization" name="clientAuthorization" placeholder="Signature or approval details"></textarea>
+        </div>
+      
+        <!-- Terms and Conditions -->
+        <h3>Terms and Conditions</h3>
+        <div class="form-group">
+          <label for="usageGuidelines">Usage Guidelines</label>
+          <textarea id="usageGuidelines" name="usageGuidelines" placeholder="Specific instructions or restrictions"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="liabilityClause">Liability Clause</label>
+          <textarea id="liabilityClause" name="liabilityClause" placeholder="Responsibilities for damages or delays"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="terminationClause">Termination Clause</label>
+          <textarea id="terminationClause" name="terminationClause" placeholder="Conditions for cancellation"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="renewalOptions">Renewal Options</label>
+          <textarea id="renewalOptions" name="renewalOptions" placeholder="Process for contract renewal"></textarea>
+        </div>
+      
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="ContractManagement.js"></script>
+</body>
+</html>

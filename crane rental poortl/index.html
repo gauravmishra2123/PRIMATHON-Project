@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Rental Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/MEDIA.PNG" alt="YANTRA MOVERS" >
+
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for equipment, categories, & more">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Location Dropdown -->
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <select>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav">
+            <a href="#">All</a>
+            <a href="#">Sell Equipment</a>
+            <a href="#">Buy Equipment</a>
+            <a href="#">Rental Plans</a>
+        </nav>
+
+        <!-- Login Button -->
+        <div class="login">
+            <button>Login</button>
+        </div>
+    </div>
+</header>
+
+<div class="navbar-container">
+    <!-- All -->
+    <div class="navbar-item">
+        <a href="#">All</a>
+        <div class="dropdown">
+            <a href="#">View All Equipment</a>
+            <a href="#">Categories</a>
+            <a href="#">Featured Items</a>
+        </div>
+    </div>
+
+    <!-- Rent Equipment -->
+    <div class="navbar-item">
+        <a href="#">Rent Equipment</a>
+        <div class="dropdown">
+            <a href="#">Short Term Rentals</a>
+            <a href="#">Long Term Rentals</a>
+            <a href="#">Custom Rental Plans</a>
+        </div>
+    </div>
+
+    <!-- Lease Equipment -->
+    <div class="navbar-item">
+        <a href="#">Lease Equipment</a>
+        <div class="dropdown">
+            <a href="#">Heavy Machinery</a>
+            <a href="#">Vehicles</a>
+            <a href="#">Tools</a>
+        </div>
+    </div>
+
+    <!-- Buy Equipment -->
+    <div class="navbar-item">
+        <a href="#">Buy Equipment</a>
+        <div class="dropdown">
+            <a href="#">Used Equipment</a>
+            <a href="#">New Equipment</a>
+            <a href="#">Special Offers</a>
+        </div>
+    </div>
+
+    <!-- Sell Equipment -->
+    <div class="navbar-item">
+        <a href="#">Sell Equipment</a>
+        <div class="dropdown">
+            <a href="#">Post an Ad</a>
+            <a href="#">Sell to Platform</a>
+            <a href="#">Pricing Guide</a>
+        </div>
+    </div>
+
+    <!-- Maintenance -->
+    <div class="navbar-item">
+        <a href="#">Maintenance</a>
+        <div class="dropdown">
+            <a href="#">Request Service</a>
+            <a href="#">Maintenance Plans</a>
+            <a href="#">DIY Tutorials</a>
+        </div>
+    </div>
+<!-- Insurance -->
+<div class="navbar-item">
+    <a href="#">Insurance</a>
+    <div class="dropdown">
+        <a href="#">Insurance Plans</a>
+        <a href="#">Claim Assistance</a>
+        <a href="#">FAQs</a>
+    </div>
+</div>
+<!-- Accessories -->
+<div class="navbar-item">
+    <a href="#">Accessories</a>
+    <div class="dropdown">
+        <a href="#">Safety Gear</a>
+        <a href="#">Replacement Parts</a>
+        <a href="#">Other Add-ons</a>
+    </div>
+</div>
+    <!-- Support -->
+    <div class="navbar-item">
+        <a href="#">Support</a>
+        <div class="dropdown">
+            <a href="#">FAQs</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Help Center</a>
+        </div>
+    </div>
+</div>
+</div>
+  
+  
+<section class="banner">
+  <div class="banner-content">
+      <div class="banner-text">
+          <h1>Rent Equipment Anytime, Anywhere</h1>
+          <p>Explore a wide range of equipment for rent. From construction machinery to power tools, we’ve got you covered.</p>
+          <a href="allProduct.html">
+            <button class="cta-button">Explore Now</button>
+          </a>
+      </div>
+      <div class="banner-image">
+          <img src="images/YANTRA MOVERS.png" alt="Equipment Banner">
+      </div>
+  </div>
+</section>
+<section class="our-services">
+  <h2>Our Services</h2>
+  <p class="services-description">We offer flexible and reliable equipment rental options, as well as a platform for you to rent out your own equipment. Explore our services below!</p>
+
+  <div class="service-cards">
+      <div class="service-card" onclick="window.location.href='allProduct.html'">
+          <div class="service-icon">
+            <img src="images/crane-truck.png"> <!-- Gear icon for Rent Equipment -->
+          </div>
+          <h3>Rent Equipment</h3>
+          <p>Browse our wide range of equipment available for rent. We ensure quality and reliability for all your needs.</p>
+      </div>
+
+      <div class="service-card" onclick="window.location.href='homePage.html'">
+          <div class="service-icon">
+            <img src="images/key.png"></i> <!-- Dollar hand icon for Put Equipment on Rent -->
+          </div>
+          <h3>Put Equipment on Rent</h3>
+          <p>Have equipment to rent out? List it on our platform and earn by offering your machinery to others.</p>
+      </div>
+  </div>
+</section>
+
+<section class="equipment-comparison-teaser">
+    <div class="teaser-content">
+        <h2>Compare Equipment Features and Prices Instantly!</h2>
+        <p>
+            Save time and make informed decisions by exploring side-by-side comparisons of our top equipment.
+        </p>
+        <button onclick="window.location.href='compare-equipment.html'">Start Comparing</button>
+    </div>
+    <div class="teaser-image">
+        <img src="images/backhoe-loader.png" alt="Equipment Comparison">
+    </div>
+</section>
+
+
+<section>
+    <div class="equipment-main-content">
+      <div class="equipment-list">
+        <h2>Available Equipment For Rent</h2>
+        <section id="equipment-grid" class="equipment-grid"></section>
+          <!-- Dynamic Equipment Cards will be appended here -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="equipment-comparison-teaser">
+    <div class="teaser-content">
+        <h2>Find Equipment Based on Location!</h2>
+        <p>
+            Book Equipment nearby you and save time and money.
+        </p>
+        <button onclick="window.location.href='compare-equipment.html'">Start Searching</button>
+    </div>
+    <div class="teaser-image">
+        <img src="images/map.png" alt="Equipment Comparison">
+    </div>
+</section>
+
+  <section class="usp-section">
+    <h2>Why Choose Us?</h2>
+    <div class="usp-cards">
+        <div class="usp-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Flexible Rental Periods</h3>
+            <p>Rent for as long as you need, with options to extend or shorten your rental period.</p>
+        </div>
+        <div class="usp-card">
+            <i class="fas fa-cogs"></i>
+            <h3>Wide Equipment Selection</h3>
+            <p>Choose from a vast range of high-quality equipment suited for every job.</p>
+        </div>
+        <div class="usp-card">
+            <i class="fas fa-truck"></i>
+            <h3>Fast Delivery Options</h3>
+            <p>Get your equipment delivered to your location quickly and reliably.</p>
+        </div>
+        <div class="usp-card">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Customer Support</h3>
+            <p>We're here to assist you anytime, ensuring smooth and hassle-free rentals.</p>
+        </div>
+        <div class="usp-card">
+            <i class="fas fa-file-alt"></i>
+            <h3>Contract Management</h3>
+            <p>Manage your rental contracts effortlessly with our easy-to-use system.</p>
+        </div>
+        <div class="usp-card">
+            <i class="fas fa-tools"></i>
+            <h3>Maintenance Tracking</h3>
+            <p>Track equipment maintenance schedules to ensure maximum uptime and reliability.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="rental-testimonials">
+    <div class="testimonial-container">
+        <h2 class="testimonial-heading">Trusted by Thousands of Happy Customers</h2>
+        <div class="rental-stats">
+            <div class="stat-item">
+                <h3>10,000+</h3>
+                <p>Equipment Rented</p>
+            </div>
+            <div class="stat-item">
+                <h3>5000+</h3>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>4.9/5</h3>
+                <p>Customer Rating</p>
+            </div>
+        </div>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The platform is seamless and efficient. Renting equipment has never been easier!"</p>
+                <div class="customer-details">
+                    <span class="customer-name">Ravi Sharma</span>
+                    <span class="customer-location">Mumbai</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Great experience with prompt service and quality equipment!"</p>
+                <div class="customer-details">
+                    <span class="customer-name">Neha Verma</span>
+                    <span class="customer-location">Bangalore</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Highly recommend for anyone looking for reliable rental solutions."</p>
+                <div class="customer-details">
+                    <span class="customer-name">Amit Singh</span>
+                    <span class="customer-location">Delhi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="how-it-works" class="how-it-works">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-description">Rent construction equipment in just a few simple steps!</p>
+        <div class="steps">
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="step-title">Search</h3>
+                <p class="step-description">Browse our catalog to find the equipment you need.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3 class="step-title">Select & Book</h3>
+                <p class="step-description">Choose equipment and book it for your desired dates.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h3 class="step-title">Payment</h3>
+                <p class="step-description">Make a secure payment online to confirm your booking.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step">
+                <div class="icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="step-title">Delivery or Pickup</h3>
+                <p class="step-description">Get your equipment delivered or pick it up from the owner.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <!-- FAQ Item 1 -->
+      <div class="faq-item">
+        <button class="faq-question">What types of equipment can I rent?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>We offer a wide range of equipment for rent, including construction tools, machinery, vehicles, and more.</p>
+        </div>
+      </div>
+  
+      <!-- FAQ Item 2 -->
+      <div class="faq-item">
+        <button class="faq-question">How can I book equipment?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>You can browse available equipment, select the one you need, and click on the "Book Now" button to proceed with the booking process.</p>
+        </div>
+      </div>
+  
+      <!-- FAQ Item 3 -->
+      <div class="faq-item">
+        <button class="faq-question">Do you provide delivery services?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes, we provide delivery services for most of our equipment. Delivery charges may vary based on location.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-item">
+        <button class="faq-question">What happens if the equipment is damaged or malfunctioning during my rental period?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>If the equipment gets damaged or malfunctions, please contact us immediately. We will guide you through the process of reporting the issue and may offer a replacement or repair service depending on the circumstances. You may be responsible for repair or replacement costs depending on the situation.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-item">
+        <button class="faq-question">Can I extend my rental period?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes, you can extend the rental period. Simply log in to your account, go to your current bookings, and select the option to extend the rental. Additional charges may apply based on the extended period.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-item">
+        <button class="faq-question">How is the rental price calculated?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Rental prices depend on the type of equipment, rental duration, and any additional services like delivery or insurance. Prices are clearly displayed on the product page.</p>
+        </div>
+      </div>
+  
+      <!-- FAQ Item 4 -->
+      <div class="faq-item">
+        <button class="faq-question">Can I cancel my booking?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes, you can cancel your booking within 24 hours of placing it. Cancellation policies may vary for different equipment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="featured-blogs">
+    <h2>Featured Articles</h2>
+    <div class="blog-cards">
+        <div class="blog-card">
+            <img src="images/Heavy-Equipment-image.jpg.webp" alt="Blog 1">
+            <h3>Top 10 Tips for Renting Construction Equipment</h3>
+            <p>Discover the essential tips to make your construction equipment rental process smooth and efficient.</p>
+            <a href="https://carolinacat.com/construction/heavy-equipment-rental-tips/" class="read-more">Read More</a>
+        </div>
+        
+        <div class="blog-card">
+            <img src="images/images-11.jpeg" alt="Blog 3">
+            <h3>Choosing the Best Equipment for Your Business</h3>
+            <p>Understand which types of equipment are best suited for your business needs and how to make the right investment.</p>
+            <a href="https://khadroint.com/4-tips-for-choosing-the-perfect-mining-equipment/" class="read-more">Read More</a>
+        </div>
+
+
+        <div class="blog-card">
+            <img src="images/Choosing-the-Right-AV-Equipment-Supplier.jpg" alt="Blog 2">
+            <h3>How to Choose the Right AV Equipment for Events</h3>
+            <p>Learn how to select the best AV equipment to ensure your event is a success from start to finish.</p>
+            <a href="https://rentforevent.com/blog/choosing-the-right-av-equipment-supplier-factors-to-consider/" class="read-more">Read More</a>
+        </div>
+        
+        <div class="blog-card">
+            <img src="images/equipment-maintenance-tips.jpg" alt="Blog 3">
+            <h3>5 Tips for prevent costly downtime </h3>
+            <p>Understand which types of equipment are best suited for your business needs and how to make the right investment.</p>
+            <a href="https://buscmms.com/blog/post/Equipment-Maintenance-Tips" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+  <footer class="footer-section">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>YANTRA MOVERS</h2>
+            <p>Trusted by thousands of happy customers</p>
+            <div class="social-icons">
+                <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="icons/youtube.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Rent Equipment</a></li>
+                    <li><a href="#">Equipment Repair</a></li>
+                    <li><a href="#">Sell Equipment</a></li>
+                    <li><a href="#">Maintenance Plans</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Help & Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Warranty Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>More Info</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Rental Guidelines</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 YANTRA MOVERS. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

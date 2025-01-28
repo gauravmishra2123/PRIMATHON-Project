@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment Rental</title>
+  <link rel="stylesheet" href="allProduct.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="navbar-container">
+      <!-- Logo -->
+      <a href="#" class="navbar-logo">YANTRA MOVERS</a>
+  
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <input type="text" placeholder="🔍 Search equipment..." class="search-input" />
+        <button class="search-btn">Search</button>
+      </div>
+  
+      <!-- Navigation Items -->
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <a href="#cart" class="navbar-link">
+            🛒 Cart
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#wishlist" class="navbar-link">
+            ❤️ Wishlist
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#login" class="navbar-link login-btn">
+            Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h2>Refine Your Search</h2>
+            <button class="reset-btn">Reset All</button>
+          </div>
+      
+          <div class="search-container">
+            <input type="search" placeholder="🔍 Search for equipment..." class="search-bar">
+          </div>
+      
+          <!-- Rental Type -->
+          <div class="filter-group">
+            <h3>Rental Type</h3>
+            <div class="filter-options">
+              <label><input type="radio" name="rental-type" value="any" checked> Any</label>
+              <label><input type="radio" name="rental-type" value="per-day"> Per Day</label>
+              <label><input type="radio" name="rental-type" value="per-hour"> Per Hour</label>
+            </div>
+          </div>
+      
+          <!-- Availability -->
+          <div class="filter-group">
+            <h3>📅 Availability</h3>
+            <div class="toggle-container">
+              <label class="toggle-switch">
+                <input type="checkbox" id="availability-toggle">
+                <span class="slider"></span>
+              </label>
+              <span>Available Now</span>
+            </div>
+          </div>
+      
+          <!-- Price Range -->
+          <div class="filter-group">
+            <h3>💲 Price Range / Hour</h3>
+            <div class="slider-container">
+              <input type="range" min="10" max="500" value="100" id="price-slider">
+              <div class="price-range">
+                <span>From $10.00</span> - <span>To $500.00</span>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Additional Filters -->
+          <div class="filter-group">
+            <h3>🏷️ Brand</h3>
+            <input type="text" placeholder="🔍 Search brands..." class="brand-search">
+          </div>
+      
+          <div class="filter-group">
+            <h3>🔧 Equipment Type</h3>
+            <div class="filter-options">
+              <label><input type="checkbox" value="crane"> Crane</label>
+              <label><input type="checkbox" value="generator"> Generator</label>
+              <label><input type="checkbox" value="compressor"> Compressor</label>
+              <label><input type="checkbox" value="forklift"> Forklift</label>
+              <label><input type="checkbox" value="excavator"> Excavator</label>
+            </div>
+          </div>
+      
+          <!-- Year of Manufacture -->
+          <div class="filter-group">
+            <h3>📅 Year of Manufacture</h3>
+            <div class="filter-options">
+              <label><input type="checkbox" value="2022"> 2022</label>
+              <label><input type="checkbox" value="2021"> 2021</label>
+              <label><input type="checkbox" value="2020"> 2020</label>
+              <label><input type="checkbox" value="2019"> 2019</label>
+            </div>
+          </div>
+      
+          <!-- Equipment Condition -->
+          <div class="filter-group">
+            <h3> Equipment Condition</h3>
+            <div class="filter-options">
+              <label><input type="radio" name="condition" value="new"> New</label>
+              <label><input type="radio" name="condition" value="used"> Used</label>
+              <label><input type="radio" name="condition" value="refurbished"> Refurbished</label>
+            </div>
+          </div>
+      
+          <!-- Power Source -->
+          <div class="filter-group">
+            <h3>⚡ Power Source</h3>
+            <div class="filter-options">
+              <label><input type="checkbox" value="electric"> Electric</label>
+              <label><input type="checkbox" value="diesel"> Diesel</label>
+              <label><input type="checkbox" value="gasoline"> Gasoline</label>
+              <label><input type="checkbox" value="manual"> Manual</label>
+            </div>
+          </div>
+      
+          <!-- Location -->
+          <div class="filter-group">
+            <h3>📍 Location</h3>
+            <input type="text" placeholder="Enter city or state..." class="location-search">
+          </div>
+        </aside>
+      
+        <!-- Main Content -->
+        <section class="equipment-main-content">
+          <div class="equipment-list">
+            <h2 class="page-title">Available Equipment for Rent</h2>
+            <div class="equipment-grid" id="equipment-grid">
+              <!-- Dynamic Equipment Cards will be inserted here -->
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <!-- Main Container -->
+<div class="primus-content-container">
+
+    <!-- News Section -->
+    <section class="primus-news-section">
+      <h2>In The News</h2>
+      <div class="primus-news-cards">
+        <div class="primus-news-card">
+          <img src="images/ht.jpg" alt="ET Logo" class="primus-news-logo" />
+          <p>Equipment rental company secures $90M funding to expand nationwide.</p>
+        </div>
+        <div class="primus-news-card">
+          <img src="images/TH.png" alt="LiveMint Logo" class="primus-news-logo" />
+          <p>Booming demand for refurbished tools drives industry growth.</p>
+        </div>
+        <div class="primus-news-card">
+          <img src="images/IE.png" alt="Times of India Logo" class="primus-news-logo" />
+          <p>Plans to open 250 locations across India by year-end.</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Affiliate Section -->
+    <section class="primus-affiliate-section">
+      <div class="primus-affiliate-banner">
+        <p>Ready to start earning?</p>
+        <h3>Register to become an Equipment Affiliate</h3>
+        <button class="primus-join-btn">Join Us</button>
+      </div>
+    </section>
+  
+    <!-- Trusted Section -->
+    <section class="primus-trusted-section">
+      <h3>Trusted by Thousands, We're India's Biggest Equipment Rental Platform</h3>
+      <div class="primus-stats-container">
+        <div class="primus-stat-item">
+          <h4>200+</h4>
+          <p>Rental Centers</p>
+        </div>
+        <div class="primus-stat-item">
+          <h4>4.5+</h4>
+          <p>User Ratings</p>
+        </div>
+      </div>
+    </section>
+  
+  </div>
+  
+      <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>YANTRA MOVERS</h2>
+                <p>Trusted by thousands of happy customers</p>
+                <div class="social-icons">
+                    <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="icons/youtube.svg" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Rent Equipment</a></li>
+                        <li><a href="#">Equipment Repair</a></li>
+                        <li><a href="#">Sell Equipment</a></li>
+                        <li><a href="#">Maintenance Plans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>More Info</h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Rental Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 YANTRA MOVERS. All rights reserved.</p>
+        </div>
+    </footer>  
+      
+      
+
+  <script src="allProduct.js"></script>
+</body>
+</html>
+
+
+
+

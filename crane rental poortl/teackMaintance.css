@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f9f9f9, #eaeaea);
+    color: #333;
+}
+
+.header {
+    background: #0056b3;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    background: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+}
+
+.rental-history {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.rental-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rental-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    max-width: 45%;
+    min-width: 300px;
+}
+
+.rental-card h2 {
+    margin: 0;
+    color: #0056b3;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rental-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.rental-card a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.rental-card a:hover {
+    text-decoration: underline;
+}
+
+.feedback {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f1faff;
+    border-left: 5px solid #0056b3;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0056b3;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rental-container {
+        flex-direction: column;
+    }
+
+    .rental-card {
+        max-width: 100%;
+    }
+}

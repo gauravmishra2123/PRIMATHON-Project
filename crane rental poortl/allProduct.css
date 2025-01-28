@@ -1,0 +1,616 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #f4f6fc, #e6ebf4);
+  }
+  
+  /* Sidebar Container */
+  .sidebar {
+    width: 300px;
+    background: linear-gradient(to bottom right, #ffffff, #e6ecfa);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* Sidebar Header */
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-header h2 {
+    font-size: 1.5rem;
+    color: #3f51b5;
+  }
+  
+  .reset-btn {
+    background: #ff6f61;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .reset-btn:hover {
+    background: #ff5045;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #cfd8dc;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Filter Groups */
+  .filter-group h3 {
+    font-size: 1.1rem;
+    color: #3f51b5;
+    margin-bottom: 10px;
+  }
+  
+  .filter-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .filter-options input {
+    margin-right: 10px;
+  }
+  
+  /* Toggle Switch */
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    background: #fff;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3f51b5;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    margin-bottom: 10px;
+  }
+  
+  .price-range {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #757575;
+  }
+  
+  /* Brand Search */
+  .brand-search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      border-radius: 0;
+      margin: 0;
+      padding: 20px;
+    }
+  }
+  .filter-group h3 {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #3f51b5;
+    margin-bottom: 10px;
+  }
+  
+  .filter-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #424242;
+  }
+  
+  .filter-options input {
+    margin-right: 10px;
+  }
+  
+  /* Search Location */
+  .location-search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+  }  
+/* Overall Page Layout */
+.equipment-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Left Sidebar */
+  .left-content {
+    flex: 0 0 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .left-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .left-content p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Equipment Section (Right Side) */
+  .equipment-main-content {
+    flex: 0 0 75%;
+    padding: 20px;
+  }
+  
+  .page-title {
+    text-align: left;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Equipment Grid */
+  .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Equipment Card */
+  .equipment-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .equipment-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image */
+  .equipment-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Title */
+  .equipment-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 15px;
+  }
+  
+  /* Description */
+  .equipment-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 15px 15px;
+  }
+  
+  /* Price */
+  .equipment-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c7d59;
+    margin: 0 15px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Book Now Button */
+  .book-now-button {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    padding: 10px;
+    background-color: #2c7d59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-now-button:hover {
+    background-color: #238a48;
+  }
+/* General Reset */
+  
+  /* Navbar Styles */
+  .navbar {
+    background: linear-gradient(90deg, #4b79a1, #283e51);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar Container */
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Search Bar */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 1.5rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .search-btn {
+    padding: 0.5rem 1rem;
+    background: #ffd700;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    background: #ffcc00;
+  }
+  
+  /* Navbar Menu */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .navbar-item {
+    font-size: 1rem;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #ffd700;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    padding: 0.4rem 1rem;
+    background: #ffd700;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background: #ffcc00;
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-search {
+      flex: 1 1 100%;
+      margin: 1rem 0;
+    }
+  
+    .navbar-menu {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .footer-section {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 30px 15px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo h2 {
+    color: #27ae60;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+  }
+  
+  .social-icons img:hover {
+    filter: grayscale(0%);
+  }
+  
+  .footer-links {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .footer-links div {
+    flex: 1 1 20%;
+  }
+  
+  .footer-links h3 {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #27ae60;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+/* Specific Class Styling */
+.primus-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .primus-news-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .primus-news-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .primus-news-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+  }
+  
+  .primus-news-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .primus-affiliate-section {
+    background: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .primus-affiliate-banner p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .primus-affiliate-banner h3 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  
+  .primus-join-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .primus-join-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .primus-trusted-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .primus-stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .primus-stat-item {
+    text-align: center;
+  }
+  
+  .primus-stat-item h4 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .primus-stat-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Media Query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .primus-news-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .primus-news-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .primus-stats-container {
+      flex-direction: column;
+    }
+  }
+     
+  

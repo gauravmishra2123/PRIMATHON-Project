@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Equipment Listings</title>
+    <link rel="stylesheet" href="manageListing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">YANTRA MOVERS</div>
+        <nav class="nav">
+            <a href="#">Dashboard</a>
+            <a href="#">Manage Listings</a>
+            <a href="#">Rental History</a>
+            <a href="#">Payments</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+    <main class="manage-equipment">
+        <div class="header-content">
+            <h1>Manage Equipment Listings</h1>
+            <button class="add-equipment-btn" onclick="showAddForm()">+ Add New Equipment</button>
+        </div>
+
+        <!-- Add Equipment Form -->
+        <section id="add-equipment-form" class="form-container hidden">
+            <h2>Add New Equipment</h2>
+            <form id="equipmentForm">
+                <div class="form-row">
+                    <label for="name">Equipment Name:</label>
+                    <input type="text" id="name" placeholder="Enter equipment name" required>
+                </div>
+                <div class="form-row">
+                    <label for="description">Description:</label>
+                    <textarea id="description" placeholder="Enter a brief description" required></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="type">Type:</label>
+                    <input type="text" id="type" placeholder="Enter equipment type" required>
+                </div>
+                <div class="form-row">
+                    <label for="specifications">Specifications:</label>
+                    <textarea id="specifications" placeholder="Enter specifications" required></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" placeholder="Enter equipment location" required>
+                </div>
+                <div class="form-row">
+                    <label for="photos">Upload Photos:</label>
+                    <input type="file" id="photos" multiple required>
+                </div>
+                <div class="form-row">
+                    <label for="pricing">Rental Rate:</label>
+                    <input type="number" id="pricing" placeholder="Rate per day/week/month" required>
+                </div>
+                <div class="form-row">
+                    <label for="availability">Availability Dates:</label>
+                    <input type="date" id="availability-start" required>
+                    <span>to</span>
+                    <input type="date" id="availability-end" required>
+                </div>
+                <div class="form-row">
+                    <label for="condition">Condition:</label>
+                    <select id="condition" required>
+                        <option value="new">New</option>
+                        <option value="good">Good</option>
+                        <option value="used">Used</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="button" class="cancel-btn" onclick="hideAddForm()">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Equipment List -->
+        <section class="equipment-list">
+            <h2>Your Equipment</h2>
+            <div class="equipment-card">
+                <div class="equipment-image">
+                    <img src="images/3.webp" alt="Bulldozer">
+                </div>
+                <div class="equipment-details">
+                    <h3>Bulldozer</h3>
+                    <p><strong>Description:</strong> Heavy-duty equipment for construction work</p>
+                    <p><strong>Type:</strong> Construction</p>
+                    <p><strong>Location:</strong> New Delhi</p>
+                    <p><strong>Rate:</strong>Rs 5000/day</p>
+                </div>
+                <div class="card-actions">
+                    <button class="edit-btn" onclick="editEquipment()">Edit</button>
+                    <button class="delete-btn" onclick="removeEquipment()">Remove</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="manageListing.js"></script>
+</body>
+</html>

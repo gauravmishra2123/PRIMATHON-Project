@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipment Details</title>
+  <link rel="stylesheet" href="delete.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="equipment-name">Loading...</h1>
+    <img id="equipment-image" src="" alt="Equipment Image" />
+    <p id="equipment-description"></p>
+    <p>
+      <strong>Price:</strong> <span id="equipment-price"></span> <del id="equipment-old-price"></del>
+    </p>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Details</th>
+      </tr>
+      <tbody id="equipment-details"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const equipmentId = "6794f86bd8aaa9bb01a9912f"; // Change this to fetch dynamically if needed
+
+    fetch(`/equipment/${equipmentId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("equipment-name").innerText = data.name;
+        document.getElementById("equipment-image").src = data.image_url;
+        document.getElementById("equipment-description").innerText = data.description;
+        document.getElementById("equipment-price").innerText = `$${data.price}`;
+        document.getElementById("equipment-old-price").innerText = `$${data.old_price}`;
+
+        const details = [
+          ["Model Name", data.model_name],
+          ["Max Load Capacity", data.max_load_capacity],
+          ["Boom Length", data.boom_length],
+          ["Rotation", data.rotation],
+          ["Max Travel Speed", data.max_travel_speed],
+          ["Fuel Type", data.fuel_type],
+          ["Control System", data.control_system],
+          ["Dimensions", data.dimensions],
+          ["Weight", data.weight],
+        ];
+
+        const detailsTable = document.getElementById("equipment-details");
+        details.forEach(([category, value]) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `<td>${category}</td><td>${value}</td>`;
+          detailsTable.appendChild(row);
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+        document.getElementById("equipment-name").innerText = "Error loading equipment details.";
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Resetting margin and padding for a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Navbar Styling */
+  header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  /* Form Styling */
+  form {
+    background-color: white;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;
+    }
+  
+    .navbar .logo {
+      font-size: 20px;
+    }
+  
+    form {
+      padding: 20px;
+    }
+  
+    button[type="submit"] {
+      padding: 15px;
+    }
+  }
+  
+  /* Additional Styling */
+  h3 {
+    color: #2c3e50;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    margin-top: 5px;
+  }
+  
+  /* Spacing between sections */
+  h3 + .form-group {
+    margin-top: 25px;
+  }
+  

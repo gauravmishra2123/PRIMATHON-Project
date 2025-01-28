@@ -1,0 +1,170 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 3px solid #0056b3;
+  }
+  
+  .header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Section */
+  .form-section {
+    margin-bottom: 3rem;
+  }
+  
+  .form-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #007BFF;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  select {
+    background-color: #f4f4f4;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Records Section */
+  .records-section {
+    margin-top: 2rem;
+  }
+  
+  .records-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #007BFF;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .status {
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .status.completed {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status.in-progress {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .status.pending {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+  

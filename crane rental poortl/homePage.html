@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Owner Dashboard</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">YANTRA MOVERS</div>
+        <nav class="nav">
+            <a href="#">Dashboard</a>
+            <a href="#">Manage Listings</a>
+            <a href="#">Rental History</a>
+            <a href="#">Payments</a>
+            <a href="#">Profile</a>
+        </nav>
+        <div class="profile">
+            <span class="bell-icon">🔔 <span class="badge">3</span></span>
+            <span class="profile-dropdown">Profile ▼</span>
+        </div>
+    </header>
+    <main class="dashboard">
+        <section class="overview">
+            <h2>Equipment Status Overview</h2>
+            <div class="status-cards">
+                <div class="card available">
+                    <h3>Available</h3>
+                    <p>15</p>
+                </div>
+                <div class="card rented">
+                    <h3>Rented</h3>
+                    <p>10</p>
+                </div>
+                <div class="card maintenance">
+                    <h3>Under Maintenance</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+        <section class="quick-links">
+            <h2>Quick Actions</h2>
+            <div class="buttons">
+                <button onclick="location.href='manageListing.html'">Manage Listings</button>
+                <button onclick="location.href='teackMaintance.html'">View Rental History</button>
+                <button onclick="location.href='maintance.html'">Track Maintance</button>
+            </div>
+        </section>
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <ul>
+                <li>New rental request for Excavator</li>
+                <li>Rental for Bulldozer ending soon</li>
+                <li>Overdue return for Crane</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

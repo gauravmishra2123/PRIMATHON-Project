@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Maintenance Records</title>
+  <link rel="stylesheet" href="viewersMain.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Past Maintenance Records</h1>
+  </header>
+
+  <main class="container">
+    <!-- Records Section -->
+    <div class="records-section">
+      <h2>Maintenance History</h2>
+      <div class="table-container">
+        <table id="records-table">
+          <thead>
+            <tr>
+              <th>Equipment ID</th>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Last Maintenance</th>
+              <th>Next Maintenance</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic records will be populated here -->
+          </tbody>
+        </table>
+      </div>
+      <!-- Pagination Controls -->
+      <div class="pagination">
+        <button id="prevBtn" class="btn">Prev</button>
+        <button id="nextBtn" class="btn">Next</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Unified Equipment Rental Platform</p>
+  </footer>
+
+  <script src="viewersMaintance.js"></script>
+</body>
+</html>
