@@ -1,4 +1,4 @@
-# PRIMATHON-PROJECT
+# DYNAMIC-HACKATHON-PROJECT
 Unified Platform simplifies crane comparison, enhances decision-making with AI-powered recommendations, and ensures safety through load analysis.
 
 
