@@ -1,51 +1,44 @@
 # PRIMATHON-PROJECT
-Unified Equipment Rental Portal for construction equipments 
+Unified Platform simplifies crane comparison, enhances decision-making with AI-powered recommendations, and ensures safety through load analysis.
+
 
 # PROBLEM STATEMENT
-Develop a Crane Rental Management System that enhances the efficiency and automation of crane rentals. 
-The system should handle:
-1. Quoting & Contracts management,
-2. Customer relations & Schedule maintenance,
-3. Billing & inventory
-# Background of the Crane Rental Industry
-Current Challenges:
-1. Manual quoting and contract management often lead to delays and lost opportunities.
-2. Lack of real-time inventory tracking results in resource mismanagement. Weak customer relationship strategies hinder repeat business and client
-retention.
-3. Inadequate maintenance systems increase safety risks and operational costs. Need of Crane Rental Management System Automation is becoming essential for managing operations efficiently. Businesses need smart, integrated solutions to stay ahead in the market which ensure costumer satisfaction.
+Web-Based Crane Comparison and Decision Support Platform
+1. Cranes Comparison,
+2. AI-Powered Crane Recommendations,
+3. Load Distribution Analysis
+4. Crane Rental/Sales Platform
+
+# Description
+Our web platform allows users to easily compare cranes based on key features and parameters. 
+AI-Powered recommendations, perform load analysis, and conduct safety checks to help users make informed decisions about crane selection and use.
+1. User Compare Multiple Cranes based on operational parameters.
+2. Users receive AI-powered recommendations ensures  best crane for each specific task.
+3. Load Distribution Analysis and recommendations for safe lifting procedures.
+4. Users can effortlessly book a crane with a single click through the web portal.
+
 
 # PROPOSED SOLUTION
-We are presenting a Platform for Unified Heavy Equipment Rental which is a single, integrated platform where individuals and industries can list their all heavy equipment including crane for rent Enables seamless equipment rentals for those in need, eliminating middlemen and inefficiencies, and bridges the gap between equipment owners and renters, maximizing utilization. Which offers instant quoting, contracts, and one-click rentals for hassle-free
-transactions.
+Our solution is a web-based platform designed to transform the way cranes are rented, sold, and selected for various material handling tasks.
+Platform simplifies crane comparison, enhances decision-making with AI-powered recommendations, and ensures safety through load analysis
 
-# PRODUCT OVERVIEW
-1. Covers cranes, bulldozers,generators, compressors, and more, offering a diverse range ofheavy equipment.
-2. Users can refine results based on type, size, availability, and price, ensuring a hassle-free rental experience.
-3. Revolutionizes the heavy equipment rental industry for individuals and businesses, it bridges the gap between equipment owners and renters
+# Methodology
 
-<img width="1440" alt="Screenshot 2025-01-28 at 11 03 51 AM" src="https://github.com/user-attachments/assets/3f86b05e-2c78-4499-a084-ba564298b151" />
+<img width="496" alt="Screenshot 2025-02-22 at 10 29 54 AM" src="https://github.com/user-attachments/assets/fe80640e-fe1c-4b6b-bfed-2c7118ae21fc" />
+
+# Demo Web-Portal
+Welcome to our next-generation crane comparison, load distribution and booking platform YANTRA MOVERS designed to simplify the process of comparing, selecting, and booking cranes with ease.
+
+<img width="1198" alt="Screenshot 2025-02-21 at 11 49 18 PM" src="https://github.com/user-attachments/assets/9fba5b5d-853f-4730-b97b-eec54e9d7720" />
 
 # TECHNICAL APPROACH
-Simple User Interface:
-The platform will use basic web technologies HTML, CSS, JavaScript for a clean and responsive design. 
-Backend : Node.js
-Secure Payments: 
-Integrated Payment Gateways like PayPal, UPI, NetBanking, and card Payments
-Cloud Hosting:
-The platform will be hosted on AWS to ensure scalability and uptime.
-Database:
+User Interface: React.js for building a dynamic, user-friendly interface.
+Backend Development: Node.js with Express.js for handling server-side logic and managing user requests.
+AI & Machine Learning: Python with TensorFlow for AI-powered recommendations and load analysis
 Database: MongoDB
-Version Control: GitHub
-Server: Xampp Server
 
-# HIGH LEVEL ARCHITECTURE DIAGRAM
-
-<img width="969" alt="Screenshot 2025-01-28 at 11 08 12 AM" src="https://github.com/user-attachments/assets/5f19ac2e-b400-4f05-93cf-26973ae4074d" />
-
-# Our USP
-1. Wide range of heavy equipment from cranes to generators on a single platform
-2. Easily find equipment based on location, type, pricing, and availability.
-3. Bridge gap between equipment owners and renters
+# FLOW-DIAGRAM
+<img width="381" alt="Screenshot 2025-02-22 at 10 32 25 AM" src="https://github.com/user-attachments/assets/38746aba-2444-408b-87c5-80c265c9c191" />
 
 
 
